@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work – Smuni Digital</title>
+  <meta http-equiv="refresh" content="0; url=index.html" />
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <img src="assets/semuni-logo.png" alt="Smuni Digital logo" class="brand-logo">
+          <div class="brand-text">
+            <span>Smuni Digital</span>
+            <span>Performance-led marketing studio</span>
+          </div>
+        </div>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="portfolio.html">Work</a>
+          <a href="results.html">Results</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="btn btn-outline" onclick="window.location.href='portfolio.html'">View work</button>
+          <button class="btn btn-primary" onclick="window.location.href='contact.html'">Get a growth plan</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Portfolio -->
+      <section id="portfolio" class="reveal visible">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-title-group">
+              <p class="section-kicker">Portfolio</p>
+              <h2 class="section-title">Selected client work.</h2>
+              <p class="section-description">
+                A look at how we design and build digital experiences that help brands
+                communicate clearly and convert more visitors into customers.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <div class="portfolio-thumb"></div>
+              <div class="portfolio-content">
+                <h3>Power Travel Agency</h3>
+                <p>
+                  Responsive travel ticketing website for an Ethiopian travel agency.
+                  We designed and developed a clear booking-focused layout, with
+                  sections for services, featured deals, and easy ways to get in touch.
+                </p>
+                <div class="portfolio-meta">
+                  <span class="portfolio-tag">Web design &amp; development</span>
+                  <a href="https://powertravelagency.com" class="btn btn-link" target="_blank" rel="noopener noreferrer">View site</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div><span id="year"></span> Smuni Digital. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="pricing.html">Plans</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

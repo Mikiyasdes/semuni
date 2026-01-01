@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – Smuni Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <img src="assets/semuni-logo.png" alt="Smuni Digital logo" class="brand-logo">
+          <div class="brand-text">
+            <span>Smuni Digital</span>
+            <span>Performance-led marketing studio</span>
+          </div>
+        </div>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="results.html">Results</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="btn btn-primary" onclick="window.location.href='contact.html'">Get a growth plan</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Pricing -->
+      <section id="pricing" class="reveal visible">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-title-group">
+              <p class="section-kicker">Pricing</p>
+              <h2 class="section-title">Clear packages built around outcomes, not guesswork.</h2>
+              <p class="section-description">
+                Start lean with a launch-ready stack or go all in with an always-on growth
+                partnership. Every package can be tailored to your goals.
+              </p>
+            </div>
+            <div class="section-cta">
+              <span>Need something custom?</span>
+              <span>We’ll build a plan around your funnel and targets.</span>
+            </div>
+          </div>
+
+          <div class="pricing-grid">
+            <div>
+
+              <!-- Price Calculator -->
+              <section class="pricing-calculator" id="priceCalculator">
+                <h3 class="pricing-calculator-title">Estimate your investment</h3>
+                <p class="pricing-calculator-sub">
+                  Pick a Website, Social Media, and/or Logo &amp; Branding option. Each keeps its own price and we sum everything for a quick estimate.
+                </p>
+                <div class="pricing-calculator-grid">
+                  <div class="pricing-calculator-field">
+                    <label for="planWeb">Website package</label>
+                    <select id="planWeb">
+                      <option value="" selected>None</option>
+                      <option value="web-basic">Basic Website – ETB 10,000 (one-time)</option>
+                      <option value="web-standard">Standard Website – ETB 20,000 (one-time)</option>
+                      <option value="web-premium">Premium Website – from ETB 50,000 (one-time)</option>
+                    </select>
+                  </div>
+
+                  <div class="pricing-calculator-field">
+                    <label for="planSocial">Social media plan</label>
+                    <select id="planSocial">
+                      <option value="" selected>None</option>
+                      <option value="social-starter">Social Starter – ETB 10,000 / month</option>
+                      <option value="social-growth">Social Growth – ETB 10,000 / month</option>
+                      <option value="social-performance">Social Performance – from ETB 10,000 / month</option>
+                    </select>
+                  </div>
+
+                  <div class="pricing-calculator-field">
+                    <label for="planDesign">Logo &amp; branding</label>
+                    <select id="planDesign">
+                      <option value="" selected>None</option>
+                      <option value="design-logo">Logo Essentials – ETB 5,000 (one-time)</option>
+                      <option value="design-brandkit">Brand Kit – ETB 15,000 (one-time)</option>
+                      <option value="design-retainer">Creative Retainer – from ETB 10,000 / month</option>
+                    </select>
+                  </div>
+
+                  <div class="pricing-calculator-field">
+                    <label for="monthsInput">Months (for monthly plans)</label>
+                    <input type="number" id="monthsInput" min="1" value="3" />
+                    <small>Used for Social &amp; Retainer plans. One-time projects ignore this.</small>
+                  </div>
+
+                  <div class="pricing-calculator-result">
+                    <p class="pricing-calculator-label">Estimated total</p>
+                    <p class="pricing-calculator-value" id="calcTotal">ETB 0</p>
+                    <p class="pricing-calculator-note" id="calcNote">Select one or more options to see an estimate.</p>
+                    <button class="btn btn-primary" type="button" onclick="window.location.href='contact.html'">
+                      Talk to us about this combo
+                    </button>
+                  </div>
+                </div>
+              </section>
+
+              <div class="pricing-tabs" id="pricingTabs">
+                <button class="pricing-tab active" data-target="web">
+                  Website Packages
+                </button>
+                <button class="pricing-tab" data-target="social">
+                  Social Media Plans
+                </button>
+                <button class="pricing-tab" data-target="design">
+                  Design &amp; Branding
+                </button>
+              </div>
+
+              <!-- Web Development Pricing -->
+              <div class="pricing-columns pricing-group" id="pricing-web">
+                <article class="pricing-card">
+                  <h3 class="pricing-title">Basic Website</h3>
+                  <p class="pricing-sub">Perfect for lean, fast launches.</p>
+                  <p class="price">ETB 10,000 <span>one-time</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Up to 3 pages (Home, About, Contact)</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Mobile-responsive layout</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Basic on-page SEO setup</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Contact form &amp; basic analytics</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                      Start with Basic
+                    </button>
+                  </div>
+                </article>
+
+                <article class="pricing-card popular">
+                  <span class="badge-popular">Most popular</span>
+                  <h3 class="pricing-title">Standard Website</h3>
+                  <p class="pricing-sub">For growing brands that need to convert.</p>
+                  <p class="price">ETB 20,000 <span>one-time</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Up to 7 pages with custom layouts</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Conversion-optimized landing page</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>SEO-optimized structure &amp; copy guidance</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>CRM &amp; email marketing integrations</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-primary" onclick="window.location.href='contact.html'">
+                      Book Standard package
+                    </button>
+                  </div>
+                </article>
+
+                <article class="pricing-card">
+                  <h3 class="pricing-title">Premium Website</h3>
+                  <p class="pricing-sub">For teams ready to scale and experiment.</p>
+                  <p class="price">From ETB 50,000 <span>one-time</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Unlimited pages (within scope)</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Custom components &amp; animations</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>A/B test-ready landing page templates</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Technical SEO &amp; performance optimization</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                      Talk about Premium
+                    </button>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Social Media Pricing -->
+              <div class="pricing-columns pricing-group" id="pricing-social" style="display:none;">
+                <article class="pricing-card">
+                  <h3 class="pricing-title">Starter</h3>
+                  <p class="pricing-sub">Stay consistent on key platforms.</p>
+                  <p class="price">ETB 15,000 <span>/month</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>2 platforms (e.g. Instagram + Facebook)</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>12 posts per month</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Basic content calendar &amp; captions</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Monthly performance summary</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                      Choose Starter
+                    </button>
+                  </div>
+                </article>
+
+                <article class="pricing-card popular">
+                  <span class="badge-popular">Growth mode</span>
+                  <h3 class="pricing-title">Growth</h3>
+                  <p class="pricing-sub">For brands that want daily visibility.</p>
+                  <p class="price">ETB 20,000 <span>/month</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Up to 4 platforms (Facebook, Instagram, TikTok, LinkedIn)</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>20–24 posts per month</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Short-form video concepts &amp; editing</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Monthly strategy call &amp; reporting</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-primary" onclick="window.location.href='contact.html'">
+                      Scale with Growth
+                    </button>
+                  </div>
+                </article>
+
+                <article class="pricing-card">
+                  <h3 class="pricing-title">Performance</h3>
+                  <p class="pricing-sub">Content + paid campaigns in one loop.</p>
+                  <p class="price">From ETB 30,000 <span>/month</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Everything in Growth plan</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Paid social campaigns &amp; optimization</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Creative testing for ads &amp; organic</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Bi-weekly performance reports</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                      Discuss Performance
+                    </button>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Design Pricing -->
+              <div class="pricing-columns pricing-group" id="pricing-design" style="display:none;">
+                <article class="pricing-card">
+                  <h3 class="pricing-title">Logo Essentials</h3>
+                  <p class="pricing-sub">A clean, flexible logo that feels like you.</p>
+                  <p class="price">ETB 5000 <span>one-time</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>2–3 initial concepts</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Main logo + icon + variations</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Basic usage guide (PDF)</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                      Start Logo project
+                    </button>
+                  </div>
+                </article>
+
+                <article class="pricing-card popular">
+                  <span class="badge-popular">Best value</span>
+                  <h3 class="pricing-title">Brand Kit</h3>
+                  <p class="pricing-sub">A full visual language for your brand.</p>
+                  <p class="price">ETB 15,000 <span>one-time</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Complete logo suite &amp; brand guidelines</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Color system &amp; typography recommendations</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Social media templates (6–8)</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-primary" onclick="window.location.href='contact.html'">
+                      Build my Brand Kit
+                    </button>
+                  </div>
+                </article>
+
+                <article class="pricing-card">
+                  <h3 class="pricing-title">Creative Retainer</h3>
+                  <p class="pricing-sub">Ongoing design support for busy teams.</p>
+                  <p class="price">From ETB 10,000 <span>/month</span></p>
+                  <ul class="pricing-features">
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Posters, decks, ads &amp; social creatives</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Fast-turnaround production &amp; revisions</span>
+                    </li>
+                    <li>
+                      <span class="check">✓</span>
+                      <span>Priority support for launches</span>
+                    </li>
+                  </ul>
+                  <div class="pricing-cta">
+                    <button class="btn btn-outline" onclick="window.location.href='contact.html'">
+                      Explore retainers
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <aside class="pricing-side">
+              <h3>Not sure where to start?</h3>
+              <p>
+                Tell us about your product, your ideal customers, and your goals.
+                We’ll suggest a simple, focused plan you can implement in 30 days.
+              </p>
+              <ul class="bullet-list">
+                <li>
+                  <span class="bullet"></span>
+                  <span>Website &amp; funnel audit with quick-win checklist</span>
+                </li>
+                <li>
+                  <span class="bullet"></span>
+                  <span>Channel recommendations and content roadmap</span>
+                </li>
+                <li>
+                  <span class="bullet"></span>
+                  <span>Suggested KPIs and tracking setup</span>
+                </li>
+              </ul>
+              <button class="btn btn-primary" onclick="window.location.href='contact.html'">
+                Request a free mini audit
+              </button>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div><span id="year"></span> Smuni Digital. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="pricing.html">Plans</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
