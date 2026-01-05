@@ -784,19 +784,25 @@ img {
       font-size: 0.85rem;
     }
 
-    .pricing-calculator-field small {
-      font-size: 0.72rem;
-      color: var(--muted);
-    }
+.pricing-calculator-field small {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
 
-    .pricing-calculator-result {
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(45, 212, 191, 0.7);
-      background: radial-gradient(circle at top right, rgba(45, 212, 191, 0.26), rgba(15, 23, 42, 0.98));
-      padding: 0.9rem 1rem;
-      font-size: 0.85rem;
-      display: grid;
-      gap: 0.35rem;
+.pricing-calculator-result {
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(45, 212, 191, 0.7);
+  background: radial-gradient(circle at top right, rgba(45, 212, 191, 0.26), rgba(15, 23, 42, 0.98));
+  padding: 0.9rem 1rem;
+  font-size: 0.85rem;
+  display: grid;
+  gap: 0.35rem;
+  grid-column: 1 / -1;
+}
+
+    .pricing-calculator-result .btn {
+      width: 100%;
+      justify-content: center;
     }
 
     .pricing-calculator-label {
